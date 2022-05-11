@@ -11,3 +11,481 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --primary-color: #c8e3f9;
+  --secondary-color: #7b7979;
+  --tertiary-color: rgb(9, 13, 62) ;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+}
+
+#nav-header {
+  /* position: -webkit-sticky;
+  position: sticky;
+  top: 0; */
+  background-image: url("./assets/images/beach-sunrise.jpg");
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed;   */
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title {
+  width: 100%;
+  margin:auto;
+} 
+.hero-title h4, h5 {
+  font-weight: bolder;
+  color: white;
+}
+.landing-icon{
+  height: 150px;
+  width: 150px;
+}
+/* Header rides the bottom of the hero until it sticks to top of screen */
+
+.nav-name {
+  color: var(--primary-color);
+  margin-left: 20px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+.nav-wrapper {
+  background-color: transparent;
+}
+.nav-item {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 20px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.sidenav-item {
+  color: var(--primary-color);
+  font-size: 1.0rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.sidenav li {
+  margin-top: 40px;
+}
+.sidenav {
+  background-color: transparent;
+  width:33%;
+}
+.dark-to-light-section {
+  background-image: linear-gradient(90deg, var(--secondary-color),50%, var(--primary-color));
+  min-height: 100vh;
+  margin:0;
+  max-width: none;
+}
+.container {
+ width: 100%;  
+ padding-top: 50px;
+ padding-bottom: 50px;
+}
+.row {
+  margin: 0px;
+}
+.portrait-holder {
+  margin-top:50px;
+}
+.about-me {
+  font-size: 1.75rem;
+  color: var(--tertiary-color);
+  margin-left:20px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+}
+.bio-body {
+  color: var(--tertiary-color);
+  margin-left:20px;
+  font-size: 1.25rem; 
+  width:80%;
+}
+.section-text {
+  color: var(--tertiary-color);
+  font-size: 1.15rem;
+}
+.portrait { 
+  height:350px;
+  width:350px;
+  background-image: url("./assets/images/portrait.jpeg");
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  border-radius: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.tech-title {
+  color: var(--tertiary-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top:0;
+  margin-bottom:7px;
+}
+
+.tech-list-group2 {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  margin-bottom: 15px;
+}
+.tech-list-group3 {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  margin-bottom: 15px;
+}
+.divider {
+  border-bottom: 1px solid black;
+  margin: 30px 0;
+  width: 40%;
+}
+.collapsible-header {
+  background-color: transparent;
+  color: var(--tertiary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+  border: none;
+  padding: .5rem;
+}
+.collapsible-body {
+    font-size: 1.15rem;
+    border:none;
+    padding: .5rem;
+}
+.collapsible {
+    margin-left:20px;
+    border:none;
+    box-shadow: none;
+}
+.backsplash-section2 {
+  align-items: center;
+  /* background-image: url("../images/3828864.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  font-weight: bold;
+  flex-wrap: wrap;
+  height: 50vh;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 0 0 10px black; 
+}
+
+.backsplash-section3 {
+  align-items: center;
+  /* background-image: url("../images/desk-1650424050588-9093.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  font-weight: bold;
+  flex-wrap: wrap;
+  height: 50vh;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 0 0 10px black; 
+}
+
+.portfolio-intro {
+  font-weight: normal;
+  font-size: 3.0rem;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  color: var(--primary-color);
+}
+.skills{
+    margin-top: 30px;
+}
+.portfolio-flex {
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    /* column-gap: 15px; */
+}
+.card-container {
+  margin-left: auto; 
+  margin-right: auto;
+}
+.card {
+    margin-left: auto; 
+    margin-right: auto;
+    /* padding: 20px !important; */
+    border: 4px solid var(--tertiary-color) !important;
+    border-radius: 10px;
+    box-shadow: 10px 5px 20px rgba(9, 13, 62, .5) ;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  transition-property: transform;
+  transition-duration: 0.5s;   
+  position: relative;
+  z-index: 3;
+}
+
+.portfolio-image {
+    height: 200px;
+    width: auto;
+}
+.card-title {
+    font-weight: bold !important;   
+    font-size: 1.5rem !important;
+    font-style: italic;
+}
+.reveal-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;  
+}
+.card-reveal p, .card-content p {
+    font-size: 1.25rem !important;
+  }
+  .tech {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 1.35rem !important;
+      font-weight: bold;
+      border-bottom: 1px solid var(--tertiary-color) !important;
+  }
+  .card-content, .card-content p, .card-content span, .card-reveal,
+  .card-reveal p, .card-reveal span { 
+      background-color: var(--primary-color) !important;
+      color: var(--tertiary-color) !important;
+  }
+  .card-content {
+      padding:10px;
+      height:300px;
+      border-top: 4px solid var(--tertiary-color);
+  }
+  .card-content p {
+      font-style:italic;
+      margin-bottom: 10px;
+  }
+  .github-link {
+      opacity: 1;
+      width: 30px;
+      height: 30px;
+      margin-top:5px;
+  }
+  #demo-button {
+      font-weight: bolder !important;
+      background-image: radial-gradient(var(--tertiary-color), var(--primary-color) 150%);
+      /* background-color: var(--tertiary-color); */
+      color: var(--primary-color);
+      align-content: center;
+      width: 80px;
+      height: 40px;
+  }
+  
+  .project-links {
+      /* position:absolute; */
+      align-items: center;
+      /* display: block; */
+      bottom: 20px;   
+      margin-top:auto;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  .project-links a {
+      margin-right: 10px;
+      margin-left: 10px;
+  }
+
+  .role-title {
+    font-style: bold;
+    margin-right: 10px;
+  }
+  
+.contact-info-section {
+  min-height: 90vh;
+  padding-top: 100px;
+  justify-content: center;
+  display: flex;
+  width:100%;
+}
+
+.contact-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contact-master-flex {
+  display: flex;
+  flex-direction: column;
+}
+.contact-icon-container {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+.contact-icon-image {
+  max-height: 50px;
+  margin: 0;
+}
+.contact-invite {
+  margin-left: 10px;
+  width: 60%;
+  display:flex;
+  align-items: center;
+}
+.contact-invite h4 {
+    margin-top:0px;
+}
+.contact-invite a{
+  text-decoration: none;
+  width: 90%;
+  margin-left: 10px;
+  color: var(--tertiary-color);
+} 
+.contact-icon-holder a {
+  padding: 3px;
+}
+.contact-icon-holder a img {
+  min-width: 0;
+  width: 100%;    
+  height: auto;
+}
+.contact-invite a h4{
+    margin-bottom: 10px;      
+    font-size: 1.75rem;
+}
+.contact-invite a p { 
+    font-size: 1.15rem;
+}
+/* Footer Section Styling  */
+footer {
+  /* background-image: linear-gradient(90deg, var(--secondary-color),50%, var(--primary-color)); */
+  background-color: var(--tertiary-color);
+  padding: 20px 35px;
+  width: 100%;
+  height:100px;
+}
+footer h4 {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  float:right;
+  margin:0;
+  padding:0   ;
+}
+
+@media screen and (max-width: 900px) {
+  .backsplash-section1 {
+      align-items: center;
+      /* background-image: url("../images/beach-sunrise.jpg"); */
+      background-size: 1700px 1300px;
+      background-position: bottom;
+      background-attachment: scroll;
+      color: white;
+      display: flex;
+      font-weight: bold;
+      flex-wrap: wrap;
+      height: 100vh;
+      justify-content: center;
+      text-align: center;
+      text-shadow: 0 0 10px black;
+  }
+
+  .backsplash-section2 {
+      align-items: center;
+      /* background-image: url("../images/3828864.jpg"); */
+      background-size: 800px 500px;
+      background-position: bottom;
+      background-attachment: scroll;
+      color: white;
+      display: flex;
+      font-weight: bold;
+      flex-wrap: wrap;
+      height: 40vh;
+      justify-content: center;
+      text-align: center;
+      text-shadow: 0 0 10px black; 
+    }
+    
+    .backsplash-section3 {
+      align-items: center;
+      /* background-image: url("../images/desk-1650424050588-9093.jpg"); */
+      background-size: 800px 600px;
+      background-position: top;
+      background-attachment:scroll;
+      color: white;
+      display: flex;
+      font-weight: bold;
+      flex-wrap: wrap;
+      height: 33vh;
+      justify-content: center;
+      text-align: center;
+      text-shadow: 0 0 10px black; 
+    }
+}
+
+#contact-form {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+  color: white;
+  background-color: white !important;
+}
+
+label {
+  color: var(--tertiary-color);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+input:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  border: 3px solid #cccccc;
+  padding: 5px;
+  background-color: white;
+}
+  
+button {
+  background: var(--tertiary-color);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+}
