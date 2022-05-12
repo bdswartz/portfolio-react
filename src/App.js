@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Header from './components/Header';
+import Resume from './components/Resume';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       {currentPage === 'aboutme' && <AboutMe></AboutMe>}
       {currentPage === 'portfolio' && <Portfolio></Portfolio>}
       {currentPage === 'contact' && <Contact></Contact>}
+      {currentPage === 'resume' && <Resume></Resume>}
     </main>
     <footer>
       <Footer></Footer>

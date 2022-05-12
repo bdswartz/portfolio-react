@@ -7,19 +7,19 @@ function Nav({currentPage, setCurrentPage}) {
   <div>
   <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
   <ul className="right hide-on-med-and-down" id="nav-items">
-        <li><a><span className="nav-item" onClick={() => {
+        <li><a><span style = {{color: currentPage === 'aboutme'? 'rgb(200, 227, 249)':'rgb(150,175,199)'}} className="nav-item" onClick={() => {
                   setCurrentPage('aboutme');
                   console.log(currentPage)
                 }}>About Me</span></a></li>
-        <li><a><span className="nav-item" onClick={() => {
+        <li><a><span style = {{color: currentPage === 'portfolio'?'rgb(200, 227, 249)':'rgb(150,175,199)'}} className="nav-item" onClick={() => {
                   setCurrentPage('portfolio');
                   console.log(currentPage)
                 }}>Portfolio</span></a></li>
-        <li><a><span className="nav-item" onClick={() => {
+        <li><a><span style = {{color: currentPage === 'contact'? 'rgb(200, 227, 249)':'rgb(150,175,199)'}} className="nav-item" onClick={() => {
                   setCurrentPage('contact');
                   console.log(currentPage)
                 }}>Contact</span></a></li>
-        <li><a><span className="nav-item" onClick={() => {
+        <li><a><span style = {{color: currentPage === 'resume'? 'rgb(200, 227, 249)':'rgb(150,175,199)'}} className="nav-item" onClick={() => {
                   setCurrentPage('resume');
                   console.log(currentPage)
                 }}>Resume</span></a></li>
