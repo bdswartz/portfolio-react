@@ -42,8 +42,9 @@ function ContactForm() {
   return (
 <section className="dark-to-light-section contact-info-section container">
 {/* <h1>Contact me</h1> */}
-  <div className='row' style={{width:'90%'}}>
+  <div className='row contact-box' style={{width:'90%'}}>
     <div className="contact-master-flex col m12 l6">
+      <h4>Where to find me..</h4>
     <div className="contact-flex-container">
       <div className="contact-icon-container">
         <a href="tel:+5158686601">
@@ -107,6 +108,7 @@ function ContactForm() {
       </div>
     </div>
     <form className=" col m12 l6" id="contact-form" onSubmit={handleSubmit}>
+    <h4>...or send me a note...</h4>
       <div>
         <label htmlFor="name">Name:</label>
         <input type="text" name="name" defaultValue={name} onBlur={handleChange} />

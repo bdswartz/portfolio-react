@@ -1,25 +1,34 @@
 import React from 'react';
-import resume from '../../assets/swartz-resume.pdf'
 import { capitalizeFirstLetter } from '../../utils/helpers';
+import TemporaryDrawer from './sidenav';
 
 function Nav({currentPage, setCurrentPage}) {
   return (
   <div>
-  <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  <a href="#" data-target="mobile-nav" class="sidenav-trigger"><TemporaryDrawer currentPage = {currentPage}
+        setCurrentPage = {setCurrentPage} /></a>
   <ul className="right hide-on-med-and-down" id="nav-items">
-        <li><a><span style = {{color: currentPage === 'aboutme'? 'rgb(200, 227, 249)':'rgb(150,175,199)'}} className="nav-item" onClick={() => {
+        <li><a href="#AboutMe"><span 
+          className={currentPage === 'aboutme' ? 'nav-item nav-active' : 'nav-item'}
+          onClick={() => {
                   setCurrentPage('aboutme');
                   console.log(currentPage)
                 }}>About Me</span></a></li>
-        <li><a><span style = {{color: currentPage === 'portfolio'?'rgb(200, 227, 249)':'rgb(150,175,199)'}} className="nav-item" onClick={() => {
+        <li><a href="#Portfolio"><span 
+          className={currentPage === 'portfolio' ? 'nav-item nav-active' : 'nav-item'}
+          onClick={() => {
                   setCurrentPage('portfolio');
                   console.log(currentPage)
                 }}>Portfolio</span></a></li>
-        <li><a><span style = {{color: currentPage === 'contact'? 'rgb(200, 227, 249)':'rgb(150,175,199)'}} className="nav-item" onClick={() => {
+        <li><a href="#Contact"><span
+        className={currentPage === 'contact' ? 'nav-item nav-active' : 'nav-item'}
+        onClick={() => {
                   setCurrentPage('contact');
                   console.log(currentPage)
                 }}>Contact</span></a></li>
-        <li><a><span style = {{color: currentPage === 'resume'? 'rgb(200, 227, 249)':'rgb(150,175,199)'}} className="nav-item" onClick={() => {
+        <li><a href="#Resume"><span 
+        className={currentPage === 'resume' ? 'nav-item nav-active' : 'nav-item'} 
+        onClick={() => {
                   setCurrentPage('resume');
                   console.log(currentPage)
                 }}>Resume</span></a></li>

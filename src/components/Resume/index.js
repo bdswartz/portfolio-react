@@ -1,9 +1,11 @@
-import React from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import * as React from 'react';
+import { Box } from '@mui/system';
+import resume from '../../assets/swartz-resume.pdf'
 
 function Resume() {
   return (
     <section className="dark-to-light-section">
+       <h4 className="portfolio-title">Experience and Skills</h4>
         <div className="container">
             <div className="collapsible-header">My Experience...</div>
                       <ul className="tech-list-group2">
@@ -14,7 +16,7 @@ function Resume() {
                         <li>Employee Training</li>
                         <li>Talent Development</li>
                       </ul>
-                <li className="active">
+                <li>
                     <div className="collapsible-header">My Tech Skills...</div>
                       <h5 className="tech-title">Back-End Stack</h5>
                       <ul className="tech-list-group3">
@@ -53,6 +55,7 @@ function Resume() {
                         <li>GitLab</li>
                       </ul>
                 </li>
+          <a href= {resume} target="_blank"><Box component='h3' sx={{ fontStyle: 'italic', fontSize: '1.5rem', mt: '5rem', color: 'rgb(9, 13, 62)' }}>Click Here to Download Full Resume</Box></a>
         </div>
     </section>
   );
