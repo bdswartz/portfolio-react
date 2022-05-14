@@ -79,7 +79,7 @@ function ProjectCard() {
           alt="Scout Pet Service Screen Shot"/>
         </div>
         <div className="card-content">
-          <span className="card-title activator grey-text text-darken-4">{project.name}<i className="material-icons right">more_vert</i></span>
+          <span className="card-title activator grey-text text-darken-4">{project.name}<i className="reveal-icon material-icons right">more_vert</i></span>
           <p>{project.description}</p><br/>
           <p><span className="role-title">Role:</span><span>{project.role}</span></p>
         </div>

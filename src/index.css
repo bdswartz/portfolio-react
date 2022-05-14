@@ -58,7 +58,9 @@ body {
 .material-icons {
   color: rgb(225, 239, 250); 
 }
-
+.reveal-icon {
+  color: var(--tertiary-color);
+}
 .nav-name {
   color: rgb(200, 227, 249) !important;  
   margin-left: 20px;

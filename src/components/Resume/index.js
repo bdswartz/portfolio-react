@@ -1,8 +1,18 @@
-import * as React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Box } from '@mui/system';
 import resume from '../../assets/swartz-resume.pdf'
 
+
 function Resume() {
+  const [twoColumns,setTwoColumns] = useState(window.innerWidth < 750);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+        const newSize = window.innerWidth < 750;
+        if (newSize !== twoColumns) setTwoColumns(newSize);
+    }, false);
+  }, [twoColumns]);
+
   return (
     <section className="dark-to-light-section">
        <h4 className="portfolio-title">Experience and Skills</h4>
@@ -19,7 +29,7 @@ function Resume() {
                 <li>
                     <div className="collapsible-header">My Tech Skills...</div>
                       <h5 className="tech-title">Back-End Stack</h5>
-                      <ul className="tech-list-group3">
+                      <ul className={`${twoColumns ? "tech-list-group2" : "tech-list-group3"}`}>
                         <li>JavaScript/ES6</li>
                         <li>Node.JS</li>
                         <li>Express.JS</li>
@@ -36,8 +46,9 @@ function Resume() {
                       </ul>
                       <div className="divider"></div>
                       <h5 className="tech-title">Front-End Stack</h5>
-                      <ul className="tech-list-group3">
+                      <ul className={`${twoColumns ? "tech-list-group2" : "tech-list-group3"}`}>
                         <li>JavaScript/ES6</li>
+                        <li>React</li>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>DOM Document API</li>  
@@ -46,6 +57,7 @@ function Resume() {
                         <li>jQuery</li>
                         <li>Bootstrap</li>
                         <li>Materialize</li>
+                        <li>Material UI</li>
                       </ul>
                       <div className="divider"></div>
                       <h5 className="tech-title">Version Control</h5>
