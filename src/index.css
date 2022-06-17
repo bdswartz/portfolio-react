@@ -98,6 +98,7 @@ body {
   /* min-height: 100vh; */
   margin:0;
   max-width: none;
+  min-height: 100vh;
 }
 .menuButton:focus {
   background-color: transparent !important;
