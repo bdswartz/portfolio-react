@@ -1,6 +1,7 @@
 import React from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import TemporaryDrawer from './sidenav';
+import resume from '../../assets/swartz-resume.pdf'
 
 function Nav({currentPage, setCurrentPage}) {
   return (
@@ -26,19 +27,20 @@ function Nav({currentPage, setCurrentPage}) {
                   setCurrentPage('contact');
                   console.log(currentPage)
                 }}>Contact</span></a></li>
-        <li><a href="#Resume"><span 
+        {/* <li><a href="#Resume"><span 
         className={currentPage === 'resume' ? 'nav-item nav-active' : 'nav-item'} 
         onClick={() => {
                   setCurrentPage('resume');
                   console.log(currentPage)
-                }}>Resume</span></a></li>
+                }}>Resume</span></a></li> */}
+                <li><a href= {resume} target="_blank" className='nav-item'>Resume</a></li>
                 </ul>
-      <ul className="sidenav" id="mobile-nav">
+      {/* <ul className="sidenav" id="mobile-nav">
         <li><a href="#about-me"><span className="sidenav-item">About Me</span></a></li>
         <li><a href="#portfolio-gallery"><span className="sidenav-item">Portfolio</span></a></li>
         <li><a href="#contact-info-section" ><span className="sidenav-item">Contact</span></a></li>
-        <li><a href="./assets/swartz-resume.pdf" target="_blank"><span className="sidenav-item">Resume</span></a></li>
-      </ul>
+        <li><a href={resume} target="_blank"><span className="sidenav-item">Resume</span></a></li>
+      </ul> */}
   </div>
   );
 }

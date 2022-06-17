@@ -20,7 +20,7 @@ function App() {
       {currentPage === 'aboutme' && <AboutMe></AboutMe>}
       {currentPage === 'portfolio' && <Portfolio></Portfolio>}
       {currentPage === 'contact' && <Contact></Contact>}
-      {currentPage === 'resume' && <Resume></Resume>}
+      {/* {currentPage === 'resume' && <Resume></Resume>} */}
     </main>
     <footer>
       <Footer></Footer>

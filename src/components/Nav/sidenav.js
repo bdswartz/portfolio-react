@@ -6,6 +6,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
+import resume from '../../assets/swartz-resume.pdf'
 
 export default function TemporaryDrawer({currentPage, setCurrentPage}) {
   
@@ -29,10 +30,10 @@ export default function TemporaryDrawer({currentPage, setCurrentPage}) {
       label: 'Contact',
       pageName: 'contact'
     },
-    {
-      label: 'Resume',
-      pageName: 'resume'
-    }
+    // {
+    //   label: 'Resume',
+    //   pageName: 'resume'
+    // }
   ]
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -62,6 +63,13 @@ export default function TemporaryDrawer({currentPage, setCurrentPage}) {
             </ListItemButton>
           </ListItem>
         ))}
+          <ListItem disablePadding>
+          <a href= {resume} target="_blank">
+            <ListItemButton>
+              <ListItemText sx={{color: 'rgb(9, 13, 62)'}} primary='Resume' />
+            </ListItemButton>
+          </a>
+          </ListItem>
       </List>
     </Box>
   );
