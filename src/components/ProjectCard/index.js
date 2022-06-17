@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
-import scout from '../../assets/images/scout-job-ss.jpg'
 import github from '../../assets/images/github-white-on-transparent.png'
-import { capitalizeFirstLetter } from '../../utils/helpers';
+
 
 function ProjectCard() {
   const projects = [
+      {
+        name: `Gardener's Forum`,
+        description:
+          'A MERN Full-Stack web application that allows gardeners to build and maintain their virtual garden.',
+        role: 'Back-End Server, GraphQL API Endpoints, React Front End',
+        tools: ['MongoDB','Express.js','React','Node.js','Material UI','Apollo GraphQL','Mongoose ODM','API Endpoints','Third Party API','JSON Web Tokens'],
+        image: 'gardenerforum-ss.jpg',
+        github: 'https://github.com/bdswartz/garden-forum',
+        deploy: 'https://gardenforum.herokuapp.com/'
+      },
       {
         name: 'Scout Pet Service',
         description:
@@ -36,24 +44,14 @@ function ProjectCard() {
         deploy: 'https://hidden-lake-84375.herokuapp.com/'
       },
       {
-        name: 'Event Planner',
+        name: 'Event Weather Outlook',
         description:
           'Built with Javascript, this application accesses the Ticketmaster and Open Weather third party APIs to present events to a user.',
         role: 'API interface/DOM manipulation',
         tools: ['Web API','DOM Document API','JavaScript','HTML','CSS'],
         image: 'ticketmaster-logo-azure.svg',
-        github: 'https://github.com/agpritts/project1-weather-event',
-        deploy: 'https://agpritts.github.io/project1-weather-event/'
-      },
-      {
-        name: 'Run Buddy',
-        description:
-          'Frontend design for a training company that allowed experimentation HTML/CSS and in particular flexbox.',
-        role: 'Sole Contributor',
-        tools: ['HTML','CSS'],
-        image: 'run-buddy-ss.jpg',
-        github: 'https://github.com/bdswartz/run-buddy',
-        deploy: 'https://bdswartz.github.io/run-buddy/'
+        github: 'https://github.com/bdswartz/event-weather-outlook',
+        deploy: 'https://bdswartz.github.io/event-weather-outlook/'
       },
       {
         name: 'JavaScript Quiz',
@@ -86,8 +84,8 @@ function ProjectCard() {
         <div className="card-reveal">
           <div className="reveal-flex">
           <div>
-          <span className="card-title">{project.name}<i className="material-icons right">close</i></span>
-          <p class="tech">Tools and Techniques</p>
+          <span className="card-title">{project.name}<i style={{color: 'rgb(9, 13, 62)'}} className="material-icons right">close</i></span>
+          <p className="tech">Tools and Techniques</p>
           {project.tools.map((tool) => (<p>{tool}</p>))}
           </div>
           <div className="project-links">
@@ -95,7 +93,7 @@ function ProjectCard() {
             href={project.deploy}
             target="_blank" 
             id="demo-button" 
-            class="waves-effect waves-light btn">Demo</a>
+            className="waves-effect waves-light btn">Demo</a>
             <a
             href={project.github}
             target="_blank"

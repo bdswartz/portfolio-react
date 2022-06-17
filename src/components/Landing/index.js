@@ -5,7 +5,7 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 function Landing() {
 //   const { currentCategory } = props;
   return (
-<div class="backsplash-section1">
+<div className="backsplash-section1">
     <a href="#sticky-header">
         <div className="hero-title">
             <img className="landing-icon" src={www} alt="World Wide Web Icon"/>

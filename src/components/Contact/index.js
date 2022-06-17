@@ -6,19 +6,27 @@ import linkedin from '../../assets/images/linkedin-logo-png-1826.png'
 import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
+  
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+  const { name, email, message } = formState;
 
   const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState;
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
       console.log('Submit Form', formState);
+      // Once the form is submitted, reset the form
+      setFormState({name: '', email:'', message:''});
     }
   };
+  console.log('After reset',formState);
 
-  const handleChange = (e) => {
+  const handleChange = event => {
+        setFormState({ ...formState, [event.target.name]: event.target.value });
+    };
+
+  const handleInput = (e) => {
     if (e.target.name === 'email') {
       const isValid = validateEmail(e.target.value);
       if (!isValid) {
@@ -111,15 +119,15 @@ function ContactForm() {
     <h4>...or send me a note...</h4>
       <div>
         <label htmlFor="name">Name:</label>
-        <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+        <input type="text" name="name" value={name} onChange={handleChange} onBlur={handleInput} />
       </div>
       <div>
         <label htmlFor="email">Email address:</label>
-        <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+        <input type="email" name="email" value={email} onChange={handleChange} onBlur={handleInput} />
       </div>
       <div>
         <label htmlFor="message">Message:</label>
-        <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+        <textarea name="message" rows="5" value={message} onChange={handleChange} onBlur={handleInput} />
       </div>
       {errorMessage && (
         <div>

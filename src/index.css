@@ -276,7 +276,7 @@ body {
 }
 
 .portfolio-image {
-    height: 200px;
+    height: 250px;
     width: auto;
 }
 .card-title {
@@ -495,7 +495,7 @@ input {
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
-  color: white;
+  color: var(--tertiary-color);
   background-color: white !important;
 }
 
@@ -516,6 +516,7 @@ textarea {
   border: 3px solid #cccccc;
   padding: 5px;
   background-color: white;
+  color: var(--tertiary-color);
 }
   
 button {
