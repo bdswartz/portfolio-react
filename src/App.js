@@ -5,14 +5,13 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import beachSunrise from './assets/images/beach-sunrise.jpg'
-import cityCharlotte from './assets/images/charlotte.jpg'
-import deskTop from './assets/images/desktop.jpg'
+
 
 // import Resume from './components/Resume';
 
 function App() {
 
-  const [currentPage, setCurrentPage] = useState({page:'aboutme', background:{beachSunrise}});
+  const [currentPage, setCurrentPage] = useState({page:'aboutme', background:beachSunrise});
   return (
     <div style={{minHeight:'100vh'}}>
       <Header
