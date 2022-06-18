@@ -4,22 +4,26 @@ import Footer from './components/Footer';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Header from './components/Header';
-import Resume from './components/Resume';
+import beachSunrise from './assets/images/beach-sunrise.jpg'
+import cityCharlotte from './assets/images/charlotte.jpg'
+import deskTop from './assets/images/desktop.jpg'
+
+// import Resume from './components/Resume';
 
 function App() {
 
-  const [currentPage, setCurrentPage] = useState('aboutme');
+  const [currentPage, setCurrentPage] = useState({page:'aboutme', background:{beachSunrise}});
   return (
-    <div>
+    <div style={{minHeight:'100vh'}}>
       <Header
         currentPage = {currentPage}
         setCurrentPage = {setCurrentPage}
       ></Header>
     <main>
       {/* {currentPage === 'landing' && <Landing></Landing>} */}
-      {currentPage === 'aboutme' && <AboutMe></AboutMe>}
-      {currentPage === 'portfolio' && <Portfolio></Portfolio>}
-      {currentPage === 'contact' && <Contact></Contact>}
+      {currentPage.page === 'aboutme' && <AboutMe></AboutMe>}
+      {currentPage.page === 'portfolio' && <Portfolio></Portfolio>}
+      {currentPage.page === 'contact' && <Contact></Contact>}
       {/* {currentPage === 'resume' && <Resume></Resume>} */}
     </main>
     <footer>

@@ -7,6 +7,10 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import resume from '../../assets/swartz-resume.pdf'
+import beachSunrise from '../../assets/images/beach-sunrise.jpg'
+import cityCharlotte from '../../assets/images/charlotte.jpg'
+import deskTop from '../../assets/images/desktop.jpg'
+
 
 export default function TemporaryDrawer({currentPage, setCurrentPage}) {
   
@@ -20,15 +24,18 @@ export default function TemporaryDrawer({currentPage, setCurrentPage}) {
   const menuItems = [
     {
       label: 'About Me',
-      pageName: 'aboutme'
+      pageName: 'aboutme',
+      backgroundName: beachSunrise
     },
     {
       label: 'Portfolio',
-      pageName: 'portfolio'
+      pageName: 'portfolio',
+      backgroundName: cityCharlotte
     },
     {
       label: 'Contact',
-      pageName: 'contact'
+      pageName: 'contact',
+      backgroundName: deskTop
     },
     // {
     //   label: 'Resume',
@@ -52,11 +59,11 @@ export default function TemporaryDrawer({currentPage, setCurrentPage}) {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {menuItems.map(({label, pageName}, index) => (
+        {menuItems.map(({label, pageName, backgroundName}, index) => (
           <ListItem key={label} disablePadding>
             <ListItemButton
             onClick={() => {
-                  setCurrentPage(pageName);
+                  setCurrentPage({page:pageName, background:backgroundName});
                   console.log(currentPage)
                 }}>
               <ListItemText sx={{color: 'rgb(9, 13, 62)'}} primary={label} />
