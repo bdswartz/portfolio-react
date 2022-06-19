@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.d86a448c.css",
-    "main.js": "/portfolio-react/static/js/main.0cc60b89.js",
+    "main.css": "/portfolio-react/static/css/main.94aa497b.css",
+    "main.js": "/portfolio-react/static/js/main.8ed2c4ea.js",
     "static/js/787.aeca62f9.chunk.js": "/portfolio-react/static/js/787.aeca62f9.chunk.js",
     "static/media/charlotte.jpg": "/portfolio-react/static/media/charlotte.4e69cb2aa2c9ca36930a.jpg",
     "static/media/beach-sunrise.jpg": "/portfolio-react/static/media/beach-sunrise.d0771cee6bd1a02213b4.jpg",
@@ -17,12 +17,12 @@
     "static/media/weather-ss.jpg": "/portfolio-react/static/media/weather-ss.b9777fe8a35cfba8e3fc.jpg",
     "static/media/ticketmaster-logo-azure.svg": "/portfolio-react/static/media/ticketmaster-logo-azure.14eb599ceb92a8e050a4.svg",
     "index.html": "/portfolio-react/index.html",
-    "main.d86a448c.css.map": "/portfolio-react/static/css/main.d86a448c.css.map",
-    "main.0cc60b89.js.map": "/portfolio-react/static/js/main.0cc60b89.js.map",
+    "main.94aa497b.css.map": "/portfolio-react/static/css/main.94aa497b.css.map",
+    "main.8ed2c4ea.js.map": "/portfolio-react/static/js/main.8ed2c4ea.js.map",
     "787.aeca62f9.chunk.js.map": "/portfolio-react/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d86a448c.css",
-    "static/js/main.0cc60b89.js"
+    "static/css/main.94aa497b.css",
+    "static/js/main.8ed2c4ea.js"
   ]
 }
