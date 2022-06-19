@@ -9,24 +9,24 @@ import { fontSize } from '@mui/system';
 export default function AboutAccordian() {
     const [twoColumns,setTwoColumns] = useState(window.innerWidth < 750);
     const [expanded, setExpanded] = React.useState('myStory');
-    const accordianStyle = {
-        color:'rgb(9, 13, 62)',
-        backgroundColor:'transparent',
-        boxShadow:'none'
-        };
+      const accordianStyle = {
+          color:'rgb(9, 13, 62)',
+          backgroundColor:'transparent',
+          boxShadow:'none'
+          };
 
-        const titleStyle = {
-            color:'rgb(9, 13, 62)',
-            fontSize: '1.5rem',
-            textShadow: '0 0 10px rgb(255 255 255)',
-            fontWeight: 'bold',
-            width: '33%', 
-            flexShrink: 0
-        };
-        const bodyStyle = {
-            fontSize: '1.2rem',
-            textShadow: 'none',
-        }
+      const titleStyle = {
+          color:'rgb(9, 13, 62)',
+          fontSize: '1.5rem',
+          textShadow: '0 0 10px rgb(255 255 255)',
+          fontWeight: 'bold',
+          width: '33%', 
+          flexShrink: 0
+          };
+      const bodyStyle = {
+          fontSize: '1.2rem',
+          textShadow: 'none',
+          };
 
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);

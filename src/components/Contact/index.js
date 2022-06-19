@@ -1,20 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import phone from '../../assets/images/mobile-phone-8-256.png'
 import emailIcon from '../../assets/images/email-icon-ampersand.png'
 import github from '../../assets/images/github-icon-transparent.png'
 import linkedin from '../../assets/images/linkedin-logo-png-1826.png'
 import { validateEmail } from '../../utils/helpers';
+import emailjs from '@emailjs/browser';
 
 function ContactForm() {
   
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
   const { name, email, message } = formState;
-
+  const form = useRef();
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!errorMessage) {
+      emailjs.sendForm('service_9lhu3ij', 'contact_form', form.current , 'SasfLGkc_64AXcxZO')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
       console.log('Submit Form', formState);
       // Once the form is submitted, reset the form
       setFormState({name: '', email:'', message:''});
@@ -115,7 +122,7 @@ function ContactForm() {
           </div>
       </div>
     </div>
-    <form className=" col m12 l6" id="contact-form" onSubmit={handleSubmit}>
+    <form ref={form} className=" col m12 l6" id="contact-form" onSubmit={handleSubmit}>
     <h4>...or send me a note...</h4>
       <div>
         <label htmlFor="name">Name:</label>

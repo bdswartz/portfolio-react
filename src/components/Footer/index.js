@@ -4,27 +4,32 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import { Box } from '@mui/system';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
-import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Footer() {
 //   const { currentCategory } = props;
+
+const footerIconStyle = {
+  fontSize: 50,
+  color: 'rgb(200, 227, 249)',
+  margin: '0 10px'
+  };
+
   return (
   <Box sx={{ display: 'flex', flexDirection: 'column'}}>
     <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'row' }}>
     <a href="https://github.com/bdswartz" target="_blank">
-    <GitHubIcon sx={{ fontSize: 50 }} className='footer-icon'/>
+    <GitHubIcon sx={footerIconStyle}/>
     </a>
     <a href="https://www.linkedin.com/in/brian-d-swartz/" target="_blank">
-      <LinkedInIcon sx={{ fontSize: 50 }} className='footer-icon'/>
+      <LinkedInIcon sx={footerIconStyle}/>
       </a>
     <a href="mailto: briandswartz@outlook.com" target="_blank">
-      <EmailIcon sx={{ fontSize: 50 }} className='footer-icon'/>
+      <EmailIcon sx={footerIconStyle}/>
       </a>
     <a href="tel:+5158686601">
-      <PhoneIphoneIcon sx={{ fontSize: 50 }} className='footer-icon'/>
+      <PhoneIphoneIcon sx={footerIconStyle}/>
       </a>
       </Box>
-
       <Box sx={{alignSelf:'end', mt: '15px'}}> <h4>Designed and Created by Brian Swartz</h4></Box>
   </Box>
     

@@ -24,7 +24,7 @@ function Nav({currentPage, setCurrentPage}) {
                   setCurrentPage({page:'portfolio', background:cityCharlotte});
                 }}>Portfolio</span></a></li>
         <li><a href="#Contact"><span
-        className={currentPage === 'contact' ? 'nav-item nav-active' : 'nav-item'}
+        className={currentPage.page === 'contact' ? 'nav-item nav-active' : 'nav-item'}
         onClick={() => {
                   setCurrentPage({page:'contact', background:deskTop});
                 }}>Contact</span></a></li>
