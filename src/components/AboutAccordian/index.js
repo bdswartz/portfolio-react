@@ -67,27 +67,6 @@ export default function AboutAccordian() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion sx={accordianStyle} expanded={expanded === 'myExperience'} onChange={handleChange('myExperience')}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2bh-content"
-          id="panel2bh-header"
-        >
-          <Typography sx={titleStyle}>My Experience...</Typography>
-        
-        </AccordionSummary>
-        <AccordionDetails>
-            <ul className="tech-list-group2">
-                <li>Project Management</li>
-                <li>Engineering Management</li>
-                <li>Process Engineering</li>
-                <li>Capital Management</li>
-                <li>Cause Analysis</li>
-                <li>Employee Training</li>
-                <li>Talent Development</li>
-            </ul>
-        </AccordionDetails>
-      </Accordion>
       <Accordion sx={accordianStyle} expanded={expanded === 'mySkills'} onChange={handleChange('mySkills')}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -139,6 +118,27 @@ export default function AboutAccordian() {
                         <li>GitHub</li>
                         <li>GitLab</li>
                       </ul>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion sx={accordianStyle} expanded={expanded === 'myExperience'} onChange={handleChange('myExperience')}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2bh-content"
+          id="panel2bh-header"
+        >
+          <Typography sx={titleStyle}>My Experience...</Typography>
+        
+        </AccordionSummary>
+        <AccordionDetails>
+            <ul className="tech-list-group2">
+                <li>Project Management</li>
+                <li>Engineering Management</li>
+                <li>Process Engineering</li>
+                <li>Capital Management</li>
+                <li>Cause Analysis</li>
+                <li>Employee Training</li>
+                <li>Talent Development</li>
+            </ul>
         </AccordionDetails>
       </Accordion>
     </div>

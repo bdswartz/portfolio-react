@@ -30,7 +30,7 @@ const footerIconStyle = {
       <PhoneIphoneIcon sx={footerIconStyle}/>
       </a>
       </Box>
-      <Box sx={{alignSelf:'end', mt: '15px'}}> <h4>Designed and Created by Brian Swartz</h4></Box>
+      <Box sx={{alignSelf:'end', mt: '15px'}}> <h4>Designed by Brian Swartz<br/>Created with React and Material UI</h4></Box>
   </Box>
     
   );

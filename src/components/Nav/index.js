@@ -1,13 +1,12 @@
 import React from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
 import TemporaryDrawer from './sidenav';
-import resume from '../../assets/swartz-resume.pdf'
+// import resume from '../../assets/swartz-resume.pdf';
 import beachSunrise from '../../assets/images/beach-sunrise.jpg'
 import cityCharlotte from '../../assets/images/charlotte.jpg'
 import deskTop from '../../assets/images/desktop.jpg'
 
 function Nav({currentPage, setCurrentPage}) {
-  console.log(currentPage)
+ 
   return (
   <div>
   <a href="#" data-target="mobile-nav" class="sidenav-trigger"><TemporaryDrawer currentPage = {currentPage}
@@ -28,7 +27,8 @@ function Nav({currentPage, setCurrentPage}) {
         onClick={() => {
                   setCurrentPage({page:'contact', background:deskTop});
                 }}>Contact</span></a></li>
-                <li><a href= {resume} target="_blank" className='nav-item'>Resume</a></li>
+                <li><a href='https://docs.google.com/document/d/1YTkVhMllmvdqfbKAGtwvT23qwAud5lz4QX7YIARUjDg/edit?usp=sharing'
+                target="_blank" className='nav-item'>Resume</a></li>
                 </ul>
   </div>
   );

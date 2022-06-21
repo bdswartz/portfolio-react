@@ -6,10 +6,10 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import resume from '../../assets/swartz-resume.pdf'
 import beachSunrise from '../../assets/images/beach-sunrise.jpg'
 import cityCharlotte from '../../assets/images/charlotte.jpg'
 import deskTop from '../../assets/images/desktop.jpg'
+// import resume from '../../assets/swartz-resume.pdf';
 
 
 export default function TemporaryDrawer({currentPage, setCurrentPage}) {
@@ -37,10 +37,6 @@ export default function TemporaryDrawer({currentPage, setCurrentPage}) {
       pageName: 'contact',
       backgroundName: deskTop
     },
-    // {
-    //   label: 'Resume',
-    //   pageName: 'resume'
-    // }
   ]
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -71,7 +67,8 @@ export default function TemporaryDrawer({currentPage, setCurrentPage}) {
           </ListItem>
         ))}
           <ListItem disablePadding>
-          <a href= {resume} target="_blank">
+          <a href= 'https://docs.google.com/document/d/1YTkVhMllmvdqfbKAGtwvT23qwAud5lz4QX7YIARUjDg/edit?usp=sharing'
+          target="_blank">
             <ListItemButton>
               <ListItemText sx={{color: 'rgb(9, 13, 62)'}} primary='Resume' />
             </ListItemButton>

@@ -27,7 +27,6 @@ function ContactForm() {
       setFormState({name: '', email:'', message:''});
     }
   };
-  console.log('After reset',formState);
 
   const handleChange = event => {
         setFormState({ ...formState, [event.target.name]: event.target.value });
@@ -50,7 +49,6 @@ function ContactForm() {
     }
     if (!errorMessage) {
       setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log('Handle Form', formState);
     }
   };
 

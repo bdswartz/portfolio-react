@@ -1,19 +1,36 @@
 import React from 'react';
+import { Box } from '@mui/system';
 import www from '../../assets/images/world-wide-web-white.png';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+import beachSunrise from '../../assets/images/beach-sunrise.jpg'
 
-function Landing() {
+function Landing({currentPage, setCurrentPage}) {
 //   const { currentCategory } = props;
+const landingStyle = {
+  alignItems: 'center',
+  backgroundImage: `url(${beachSunrise})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundAttachment: 'fixed',
+  color: 'white',
+  display: 'flex',
+  fontWeight: 'bold',
+  flexWrap: 'wrap',
+  height: '100vh',
+  justifyContent: 'center',
+  textAlign: 'center',
+  textShadow: '0 0 10px black'
+}
   return (
-<div className="backsplash-section1">
-    <a href="#sticky-header">
-        <div className="hero-title">
+    <Box sx={landingStyle}>
+        <div className="hero-title" onClick={()=> {
+          setCurrentPage({page:'aboutme', background:beachSunrise})
+        }}>
             <img className="landing-icon" src={www} alt="World Wide Web Icon"/>
             <h4>Brian Swartz</h4>
             <h5>Aspiring Full Stack Web Developer</h5>
+            <p>Click to enter...</p>
         </div>
-    </a>
-</div>
+    </Box>
   );
 }
 export default Landing;

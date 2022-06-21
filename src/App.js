@@ -5,13 +5,22 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Header from './components/Header';
 import beachSunrise from './assets/images/beach-sunrise.jpg'
-
-
-// import Resume from './components/Resume';
+import Landing from './components/Landing';
 
 function App() {
 
-  const [currentPage, setCurrentPage] = useState({page:'aboutme', background:beachSunrise});
+  const [currentPage, setCurrentPage] = useState({page:'landing', background:beachSunrise});
+  if (currentPage.page==='landing') {
+    return (
+      <>
+      <Landing
+          currentPage = {currentPage}
+          setCurrentPage = {setCurrentPage}
+      ></Landing>
+      </>
+    )
+  }
+  else {
   return (
     <div style={{minHeight:'100vh'}}>
       <Header
@@ -19,7 +28,7 @@ function App() {
         setCurrentPage = {setCurrentPage}
       ></Header>
     <main>
-      {/* {currentPage === 'landing' && <Landing></Landing>} */}
+      
       {currentPage.page === 'aboutme' && <AboutMe></AboutMe>}
       {currentPage.page === 'portfolio' && <Portfolio></Portfolio>}
       {currentPage.page === 'contact' && <Contact></Contact>}
@@ -31,5 +40,5 @@ function App() {
     </div>
   );
 }
-
+}
 export default App;

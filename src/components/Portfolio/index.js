@@ -1,6 +1,5 @@
 import React from 'react';
 import ProjectCard from '../ProjectCard';
-import { capitalizeFirstLetter } from '../../utils/helpers';
 import { Box } from '@mui/system';
 
 function Portfolio() {
