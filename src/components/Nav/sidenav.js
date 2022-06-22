@@ -62,17 +62,17 @@ export default function TemporaryDrawer({currentPage, setCurrentPage}) {
                   setCurrentPage({page:pageName, background:backgroundName});
                   console.log(currentPage)
                 }}>
-              <ListItemText sx={{color: 'rgb(9, 13, 62)'}} primary={label} />
+              <ListItemText disableTypography sx={{color: 'rgb(9, 13, 62)', fontSize: '1.5rem', marginBottom: '30px', marginTop: '30px'}} primary={label} />
             </ListItemButton>
           </ListItem>
         ))}
           <ListItem disablePadding>
-          <a href= 'https://docs.google.com/document/d/1YTkVhMllmvdqfbKAGtwvT23qwAud5lz4QX7YIARUjDg/edit?usp=sharing'
+          <a href= 'https://drive.google.com/file/d/18lamWgMb1ZMzP4WAa1gyrgculucf0tKW/view?usp=sharing'
           target="_blank">
             <ListItemButton>
-              <ListItemText sx={{color: 'rgb(9, 13, 62)'}} primary='Resume' />
+              <ListItemText disableTypography sx={{color: 'rgb(9, 13, 62)', fontSize: '1.5rem', marginTop: '30px' }} primary='Resume' />
             </ListItemButton>
-          </a>
+          </a>     
           </ListItem>
       </List>
     </Box>
