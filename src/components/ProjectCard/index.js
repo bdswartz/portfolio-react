@@ -8,7 +8,7 @@ function ProjectCard() {
         description:
           'A MERN Full-Stack web application that allows gardeners to build and maintain their virtual garden.',
         role: 'Back-End Server, GraphQL API Endpoints, React Front End',
-        tools: ['MongoDB','Express.js','React','Node.js','Material UI','Apollo GraphQL','Mongoose ODM','API Endpoints','Third Party API','JSON Web Tokens'],
+        tools: ['MongoDB','Express.js','React','Node.js','Material UI','GraphQL','Mongoose ODM','API Endpoints','JSON Web Tokens'],
         image: 'gardenerforum-ss.jpg',
         github: 'https://github.com/bdswartz/garden-forum',
         deploy: 'https://gardenforum.herokuapp.com/'

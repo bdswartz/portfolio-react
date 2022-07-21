@@ -27,7 +27,7 @@ const landingStyle = {
         }}>
             <img className="landing-icon" src={www} alt="World Wide Web Icon"/>
             <h4>Brian Swartz</h4>
-            <h5>Aspiring Full Stack Web Developer</h5>
+            <h5>Full Stack Web Developer</h5>
             <p>Click to enter...</p>
         </div>
     </Box>
