@@ -8,7 +8,7 @@ function ProjectCard() {
         description:
           'A MERN Full-Stack web application that allows gardeners to build and maintain their virtual garden.',
         role: 'Back-End Server, GraphQL API Endpoints, React Front End',
-        tools: ['MongoDB','Express.js','React','Node.js','Material UI','GraphQL','Mongoose ODM','API Endpoints','JSON Web Tokens'],
+        tools: ['MongoDB','Express.js','React','Node.js','Material UI','Apollo GraphQL','Mongoose ODM','GraphQL API Endpoints','JSON Web Tokens'],
         image: 'gardenerforum-ss.jpg',
         github: 'https://github.com/bdswartz/garden-forum',
         deploy: 'https://gardenforum.herokuapp.com/'
@@ -18,7 +18,7 @@ function ProjectCard() {
         description:
           'Full Stack express web server application with MVC architecture that utilizes Handlebars html templating package.',
         role: 'Back-End Server, API Endpoints, Data Algorithms',
-        tools: ['Node.JS','Express.JS','mySQL','APIs','Sequelize','Handlebars','MVC Architecture'],
+        tools: ['Node.JS','Express.JS','mySQL','REST APIs','Sequelize','Handlebars','MVC Architecture'],
         image: 'scout-job-ss.jpg',
         github: 'https://github.com/bdswartz/pet-care-marketplace',
         deploy: 'https://scout-pet-service.herokuapp.com/'
@@ -38,7 +38,7 @@ function ProjectCard() {
         description:
           'A Full-Stack CMS-style blog posting app with an express server and a mySQL database.',
         role: 'Sole Contributor',
-        tools: ['Node.JS','Express.JS','mySQL','Server-Side APIs','Sequelize','Handlebars','MVC Architecture'],
+        tools: ['Node.JS','Express.JS','mySQL','REST APIs','Sequelize','Handlebars','MVC Architecture'],
         image: 'tech-blog-ss.jpg',
         github: 'https://github.com/bdswartz/tech-blog',
         deploy: 'https://hidden-lake-84375.herokuapp.com/'
@@ -58,7 +58,7 @@ function ProjectCard() {
         description:
           'An application with quiz questions and answers driven by JavaScript that are in random order to keep the user engaged.',
         role: 'Sole Contributor',
-        tools: ['Web API','DOM Document API','JavaScript','HTML','CSS'],
+        tools: ['DOM Document API','JavaScript','HTML','CSS'],
         image: 'coding-quiz-ss.jpg',
         github: 'https://github.com/bdswartz/pet-care-marketplace',
         deploy: 'https://scout-pet-service.herokuapp.com/'
@@ -91,12 +91,14 @@ function ProjectCard() {
           <div className="project-links">
             <a
             href={project.deploy}
-            target="_blank" 
+            target="_blank"
+            rel="noreferrer" 
             id="demo-button" 
             className="waves-effect waves-light btn">Demo</a>
             <a
             href={project.github}
             target="_blank"
+            rel="noreferrer"
             id="demo-button" 
             className="waves-effect waves-light btn">
                 <img

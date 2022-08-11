@@ -68,7 +68,7 @@ export default function TemporaryDrawer({currentPage, setCurrentPage}) {
         ))}
           <ListItem disablePadding>
           <a href= 'https://drive.google.com/file/d/18lamWgMb1ZMzP4WAa1gyrgculucf0tKW/view?usp=sharing'
-          target="_blank">
+          target="_blank" rel="noreferrer"> 
             <ListItemButton>
               <ListItemText disableTypography sx={{color: 'rgb(9, 13, 62)', fontSize: '1.5rem', marginTop: '30px' }} primary='Resume' />
             </ListItemButton>

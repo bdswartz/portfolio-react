@@ -4,7 +4,7 @@ import www from '../../assets/images/world-wide-web-white.png';
 import beachSunrise from '../../assets/images/beach-sunrise.jpg'
 
 function Landing({currentPage, setCurrentPage}) {
-//   const { currentCategory } = props;
+
 const landingStyle = {
   alignItems: 'center',
   backgroundImage: `url(${beachSunrise})`,
@@ -22,7 +22,7 @@ const landingStyle = {
 }
   return (
     <Box sx={landingStyle}>
-        <div className="hero-title" onClick={()=> {
+        <div className="hero-title" href="#" onClick={()=> {
           setCurrentPage({page:'aboutme', background:beachSunrise})
         }}>
             <img className="landing-icon" src={www} alt="World Wide Web Icon"/>
