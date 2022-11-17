@@ -80,9 +80,11 @@ export default function AboutAccordian() {
         <h5 className="tech-title">Back-End Stack</h5>
                       <ul className={`${twoColumns ? "tech-list-group2" : "tech-list-group3"}`}>
                         <li>JavaScript/ES6</li>
+                        <li>Apex</li>
                         <li>Node.JS</li>
                         <li>Express.JS</li>
                         <li>Express-Sessions</li>
+                        <li>Ruby on Rails</li>
                         <li>REST APIs</li>
                         <li>GraphQL APIs</li>
                         <li>mySQL</li>  
@@ -90,8 +92,6 @@ export default function AboutAccordian() {
                         <li>Sequelize ORM</li>
                         <li>Mongoose ODM</li>
                         <li>Handlebars</li>
-                        <li>bcrypt</li>
-                        <li>Heroku</li>
                       </ul>
                       <div className="divider"></div>
                       <h5 className="tech-title">Front-End Stack</h5>
@@ -99,6 +99,7 @@ export default function AboutAccordian() {
                         <li>JavaScript/ES6</li>
                         <li>React</li>
                         <li>Material UI</li>
+                        <li>Lightning Web Components framework</li>
                         <li>HTML 5</li>
                         <li>CSS 3</li>
                         <li>DOM Document API</li>
@@ -113,6 +114,8 @@ export default function AboutAccordian() {
                       <ul className="tech-list-group3">
                         <li>Git Version Control</li>
                         <li>GitHub</li>
+                        <li>Heroku</li>
+                        <li>AWS (EC2 and S3)</li>
                         <li>NPM</li>
                         <li>Object-Oriented Programming</li>
                         <li>MVC Architecture</li>
