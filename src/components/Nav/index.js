@@ -27,7 +27,7 @@ function Nav({currentPage, setCurrentPage}) {
         onClick={() => {
                   setCurrentPage({page:'contact', background:deskTop});
                 }}>Contact</span></a></li>
-                <li><a href='https://drive.google.com/file/d/18lamWgMb1ZMzP4WAa1gyrgculucf0tKW/view?usp=sharing'
+                <li><a href='https://drive.google.com/file/d/19FMcYenv06IfkooUcEvYDcxa7yzvqPW1/view?usp=share_link'
                 target="_blank" className='nav-item'>Resume</a></li>
                 </ul>
   </div>
