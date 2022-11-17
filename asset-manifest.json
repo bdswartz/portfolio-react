@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.ab69148b.css",
-    "main.js": "/portfolio-react/static/js/main.77453d4f.js",
+    "main.js": "/portfolio-react/static/js/main.ea8a00a3.js",
     "static/js/787.aeca62f9.chunk.js": "/portfolio-react/static/js/787.aeca62f9.chunk.js",
     "static/media/charlotte.jpg": "/portfolio-react/static/media/charlotte.4e69cb2aa2c9ca36930a.jpg",
     "static/media/beach-sunrise.jpg": "/portfolio-react/static/media/beach-sunrise.d0771cee6bd1a02213b4.jpg",
@@ -19,11 +19,11 @@
     "static/media/ticketmaster-logo-azure.svg": "/portfolio-react/static/media/ticketmaster-logo-azure.14eb599ceb92a8e050a4.svg",
     "index.html": "/portfolio-react/index.html",
     "main.ab69148b.css.map": "/portfolio-react/static/css/main.ab69148b.css.map",
-    "main.77453d4f.js.map": "/portfolio-react/static/js/main.77453d4f.js.map",
+    "main.ea8a00a3.js.map": "/portfolio-react/static/js/main.ea8a00a3.js.map",
     "787.aeca62f9.chunk.js.map": "/portfolio-react/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ab69148b.css",
-    "static/js/main.77453d4f.js"
+    "static/js/main.ea8a00a3.js"
   ]
 }
